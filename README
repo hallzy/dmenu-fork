@@ -5,7 +5,29 @@ dmenu is an efficient dynamic menu for X.
 
 Custom Updates
 --------------
-No changes. At the time of writing, this is as is from Suckless
+
+* Changed colours to use gruvbox colours
+* The following dmenu patches (patch files used are in 'patches' folder):
+    * dmenu-border-4.9.diff
+        * Add a border to dmenu
+        * Border width of 2
+    * dmenu-center-20200111-8cd37e1.diff
+        * Adds a new '-c' option to center dmenu
+        * Center is default off
+        * Min width is set to 1000
+    * dmenu-highlight-4.9.diff
+        * Highlights matching text for what you have typed
+        * Config contains Gruvbox colours
+    * dmenu-lineheight-4.9.diff
+        * Ability to set the default height of dmenu
+        * I have set this to 25
+    * dmenu-numbers-4.9.diff
+        * Show the number of matches
+    * dmenu-printinputtext-20190822-bbc464d.diff
+        * New option '-t' to reverse the action of 'enter' and 'shift+enter'
+    * dmenu-rejectnomatch-4.7.diff
+        * Don't allow characters to be used for a search that would result in no
+          matches found if '-r' option is provided.
 
 
 Requirements
